@@ -79,20 +79,6 @@ body {
     margin: 0;
 }
 
-@media (max-width: 768px) {
-    .intro {
-        flex-direction: column; /* Stacks text and image vertically on smaller screens */
-        text-align: center; /* Centers text */
-    }
-
-    .intro img {
-        width: 80%; /* Shrinks image for smaller screens */
-    }
-
-    .intro-content {
-        max-width: 100%; /* Allows text to use full width on small screens */
-    }
-}
 
 
 /*Resume*/
@@ -164,4 +150,81 @@ footer p:first-child {
 footer p:last-child {
     font-style: italic; /* Adds emphasis with italic text */
     color: #ccc; /* Lighter color for secondary information */
+}
+
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column; /* Stacks the navbar items vertically */
+        align-items: flex-start; /* Align items to the left */
+        padding: 10px 20px; /* Reduce padding for smaller screens */
+    }
+
+    .navbar img {
+        margin-bottom: 10px; /* Adds space below the logo */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stacks links vertically */
+        gap: 10px; /* Reduces spacing between links */
+    }
+
+    .nav-links a {
+        font-size: 14px; /* Reduces font size for smaller screens */
+    }
+
+    /* Intro Section */
+    .intro {
+        flex-direction: column; /* Stacks image and text vertically */
+        text-align: center; /* Centers text for mobile */
+        padding: 15px; /* Adjusts padding */
+    }
+
+    .intro img {
+        width: 90%; /* Shrinks image for smaller screens */
+        margin-bottom: 15px; /* Adds spacing below the image */
+    }
+
+    .intro-content {
+        max-width: 100%; /* Allows content to take up full width */
+    }
+
+    .intro h1 {
+        font-size: 1.5rem; /* Slightly smaller heading */
+    }
+
+    .intro p {
+        font-size: 0.9rem; /* Smaller font size for paragraph */
+    }
+
+    /* Resume Section */
+    .resume {
+        padding: 15px; /* Reduce padding for smaller screens */
+        gap: 10px; /* Adjust gap between label and button */
+    }
+
+    .resume label {
+        font-size: 0.75rem; /* Reduce font size */
+    }
+
+    .resume button {
+        font-size: 0.9rem; /* Adjust button font size */
+        padding: 8px 16px; /* Smaller button padding */
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.8rem; /* Smaller font size for footer */
+        padding: 15px 10px; /* Reduce padding */
+    }
+
+    footer p:first-child {
+        font-size: 0.9rem; /* Slightly smaller emphasis text */
+    }
+
+    footer p:last-child {
+        font-size: 0.75rem; /* Reduce size for secondary text */
+    }
 }
