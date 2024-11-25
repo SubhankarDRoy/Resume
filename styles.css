@@ -40,3 +40,128 @@ body {
     color: #007BFF; /* Change color on hover */
     
 }
+
+.intro {
+    display: flex; /* Aligns text and image side by side */
+    align-items: center; /* Vertically aligns content */
+    gap: 20px; /* Space between text and image */
+    padding: 20px;
+    max-width: 1200px; /* Limits the width of the section */
+    margin: 0 auto; /* Centers the intro section on the page */
+}
+
+.intro img {
+    flex-shrink: 0; /* Ensures the image does not shrink */
+    width: 30%; /* Image takes 30% of the container */
+    max-width: 100%; /* Ensures the image doesn't overflow */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for aesthetics */
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column; /* Stacks the heading and paragraph */
+    max-width: 60%; /* Limits the width of the text content */
+}
+
+.intro h1 {
+    font-size: 2rem; /* Adjusted font size */
+    color: #333; /* Dark gray color */
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif; /* Clean font for the heading */
+}
+
+.intro p {
+    font-size: 1rem; /* Slightly smaller font size */
+    line-height: 1.6; /* Improves text spacing */
+    color: #555; /* Medium gray for contrast */
+    font-family: 'Georgia', serif; /* Elegant font for the paragraph */
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column; /* Stacks text and image vertically on smaller screens */
+        text-align: center; /* Centers text */
+    }
+
+    .intro img {
+        width: 80%; /* Shrinks image for smaller screens */
+    }
+
+    .intro-content {
+        max-width: 100%; /* Allows text to use full width on small screens */
+    }
+}
+
+
+/*Resume*/
+/* Style for the resume section */
+.resume {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    gap: 15px; /* Space between label and button */
+    padding: 20px;
+    
+}
+
+.resume label {
+    font-size: 0.8rem; /* Slightly larger font for readability */
+    color: #878787; /* Neutral text color */
+    font-family: 'Arial', sans-serif;
+}
+
+.resume button {
+    padding: 10px 20px; /* Add spacing inside the button */
+    font-size: 1rem; /* Readable font size */
+    color: white; /* Text color */
+    background-color: #007BFF; /* Blue background */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.resume button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.resume button:active {
+    transform: scale(1); /* Reset scale on click */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stacks the intro and resume sections */
+    align-items: center; /* Center-align the entire content */
+    gap: 30px; /* Space between intro and resume */
+}
+
+
+footer {
+    background-color: #333; /* Dark background for contrast */
+    color: white; /* White text for readability */
+    text-align: center; /* Center-aligns the content */
+    padding: 20px 10px; /* Adds space inside the footer */
+    font-size: 0.9rem; /* Small font size for a footer */
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    border-top: 2px solid #007BFF; /* Optional border for separation */
+}
+
+footer p {
+    margin: 5px 0; /* Adds slight spacing between paragraphs */
+    line-height: 1.5; /* Improves readability */
+}
+
+footer p:first-child {
+    font-weight: bold; /* Highlights the first paragraph */
+    font-size: 1rem; /* Slightly larger font for emphasis */
+}
+
+footer p:last-child {
+    font-style: italic; /* Adds emphasis with italic text */
+    color: #ccc; /* Lighter color for secondary information */
+}
