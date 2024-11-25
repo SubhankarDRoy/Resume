@@ -154,21 +154,22 @@ footer p:last-child {
 
 
 /* Mobile view adjustments */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     /* Navbar */
     .navbar {
-        flex-direction: column; /* Stacks the navbar items vertically */
-        align-items: flex-start; /* Align items to the left */
-        padding: 10px 20px; /* Reduce padding for smaller screens */
+        flex-direction: column; /* Stacks items vertically */
+        align-items: center; /* Centers the content */
+        padding: 10px 20px; /* Adjust padding for smaller screens */
     }
 
     .navbar img {
-        margin-bottom: 10px; /* Adds space below the logo */
+        margin-bottom: 10px; /* Adds spacing below the logo */
     }
 
     .nav-links {
         flex-direction: column; /* Stacks links vertically */
-        gap: 10px; /* Reduces spacing between links */
+        align-items: center; /* Centers links */
+        gap: 10px; /* Adds space between links */
     }
 
     .nav-links a {
@@ -177,54 +178,60 @@ footer p:last-child {
 
     /* Intro Section */
     .intro {
-        flex-direction: column; /* Stacks image and text vertically */
-        text-align: center; /* Centers text for mobile */
-        padding: 15px; /* Adjusts padding */
+        flex-direction: column; /* Stacks content vertically */
+        text-align: center; /* Centers text */
+        padding: 20px 15px; /* Adjust padding */
     }
 
     .intro img {
-        width: 90%; /* Shrinks image for smaller screens */
-        margin-bottom: 15px; /* Adds spacing below the image */
+        width: 80%; /* Shrinks image for smaller screens */
+        margin: 0 auto 15px; /* Centers and adds space below the image */
     }
 
     .intro-content {
-        max-width: 100%; /* Allows content to take up full width */
+        max-width: 100%; /* Allows content to take full width */
     }
 
     .intro h1 {
-        font-size: 1.5rem; /* Slightly smaller heading */
+        font-size: 1.8rem; /* Adjust heading size */
+        margin-bottom: 10px; /* Adds space below the heading */
     }
 
     .intro p {
-        font-size: 0.9rem; /* Smaller font size for paragraph */
+        font-size: 1rem; /* Maintains readability */
+        line-height: 1.6; /* Keeps text spacing consistent */
     }
 
     /* Resume Section */
     .resume {
-        padding: 15px; /* Reduce padding for smaller screens */
-        gap: 10px; /* Adjust gap between label and button */
+        padding: 20px 10px; /* Adjust padding */
+        gap: 10px; /* Space between label and button */
     }
 
     .resume label {
-        font-size: 0.75rem; /* Reduce font size */
+        font-size: 0.9rem; /* Slightly smaller label font size */
     }
 
     .resume button {
-        font-size: 0.9rem; /* Adjust button font size */
-        padding: 8px 16px; /* Smaller button padding */
+        font-size: 0.9rem; /* Smaller button text size */
+        padding: 8px 15px; /* Adjust button padding */
     }
 
     /* Footer */
     footer {
-        font-size: 0.8rem; /* Smaller font size for footer */
-        padding: 15px 10px; /* Reduce padding */
+        font-size: 0.8rem; /* Reduce font size for smaller screens */
+        padding: 15px 10px; /* Adjust padding */
+    }
+
+    footer p {
+        margin: 5px 0; /* Adjust spacing between paragraphs */
     }
 
     footer p:first-child {
-        font-size: 0.9rem; /* Slightly smaller emphasis text */
+        font-size: 0.9rem; /* Slightly larger for emphasis */
     }
 
     footer p:last-child {
-        font-size: 0.75rem; /* Reduce size for secondary text */
+        font-size: 0.8rem; /* Slightly smaller for secondary text */
     }
 }
